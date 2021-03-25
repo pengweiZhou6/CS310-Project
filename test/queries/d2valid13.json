@@ -1,0 +1,19 @@
+{
+"title": "d2 query invalid ORDER NOT IN COLUMNS",
+"query": {
+  "WHERE": {
+    "GT": {"courses_avg": 99}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_title"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": ["courses_avg"]
+    }
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

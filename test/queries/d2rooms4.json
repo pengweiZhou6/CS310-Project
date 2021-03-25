@@ -1,0 +1,26 @@
+{
+"title": "d2 rooms query valid:  sort_furniture_shortname",
+"query": {
+  "WHERE": {
+    "IS": {
+      "rooms_href": "*SWNG*"
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_furniture",
+      "rooms_shortname"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": [
+        "rooms_furniture",
+        "rooms_shortname"
+      ]
+    }
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Movable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Moveable Tables & Chairs","rooms_shortname":"SWNG"},{"rooms_furniture":"Classroom-Moveable Tables & Chairs","rooms_shortname":"SWNG"}]}

@@ -1,0 +1,30 @@
+{
+"title": "d2 query simpleSUM",
+"query": {
+  "WHERE": {
+    "GT": {
+      "courses_avg": 97
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "minAvg"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_dept"
+    ],
+    "APPLY": [
+      {
+        "minAvg": {
+          "SUM": "courses_avg"
+        }
+      }
+    ]
+  }
+},
+"isQueryValid": true,
+
+"result":[{"courses_dept":"cnps","minAvg":294.13},{"courses_dept":"crwr","minAvg":196},{"courses_dept":"educ","minAvg":97.5},{"courses_dept":"eece","minAvg":197.5},{"courses_dept":"epse","minAvg":1862.24},{"courses_dept":"math","minAvg":783.2},{"courses_dept":"nurs","minAvg":1177.72},{"courses_dept":"spph","minAvg":197.96}]}

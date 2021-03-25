@@ -1,0 +1,27 @@
+{
+"title": "d2 rooms query valid: min lat",
+"query": {
+  "WHERE": {
+    "GT": {"rooms_seats": 100}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_lat",
+      "minLat"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": [
+        "minLat"
+      ]
+    }
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": ["rooms_lat"],
+    "APPLY": [{"minLat": {"MIN": "rooms_lat"}}]
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_lat":49.26044,"minLat":49.26044},{"rooms_lat":49.26047,"minLat":49.26047},{"rooms_lat":49.26114,"minLat":49.26114},{"rooms_lat":49.26125,"minLat":49.26125},{"rooms_lat":49.26176,"minLat":49.26176},{"rooms_lat":49.26207,"minLat":49.26207},{"rooms_lat":49.26228,"minLat":49.26228},{"rooms_lat":49.26229,"minLat":49.26229},{"rooms_lat":49.26236,"minLat":49.26236},{"rooms_lat":49.26274,"minLat":49.26274},{"rooms_lat":49.26293,"minLat":49.26293},{"rooms_lat":49.26372,"minLat":49.26372},{"rooms_lat":49.26398,"minLat":49.26398},{"rooms_lat":49.26478,"minLat":49.26478},{"rooms_lat":49.26479,"minLat":49.26479},{"rooms_lat":49.26486,"minLat":49.26486},{"rooms_lat":49.26517,"minLat":49.26517},{"rooms_lat":49.26541,"minLat":49.26541},{"rooms_lat":49.26545,"minLat":49.26545},{"rooms_lat":49.2659,"minLat":49.2659},{"rooms_lat":49.26605,"minLat":49.26605},{"rooms_lat":49.266089,"minLat":49.266089},{"rooms_lat":49.2661,"minLat":49.2661},{"rooms_lat":49.26627,"minLat":49.26627},{"rooms_lat":49.266463,"minLat":49.266463},{"rooms_lat":49.26766,"minLat":49.26766},{"rooms_lat":49.26826,"minLat":49.26826},{"rooms_lat":49.2683,"minLat":49.2683}]}

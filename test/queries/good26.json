@@ -1,0 +1,23 @@
+{
+"title": "IS string just one asterisk",
+"query":{
+  "WHERE": {"AND":[
+      {"IS": {"courses_instructor": "*"}},
+    
+      {"EQ": {"courses_avg": 95}}
+					]}
+  ,
+    
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_title"
+    ],
+    "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": true,
+
+"result":[{"courses_avg":95,"courses_title":"kin project"},{"courses_avg":95,"courses_title":"master eng proj"},{"courses_avg":95,"courses_title":"adlt psychpathlg"},{"courses_avg":95,"courses_title":"adlt psychpathlg"},{"courses_avg":95,"courses_title":"m.sc major essay"},{"courses_avg":95,"courses_title":"m.sc major essay"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"thesis"},{"courses_avg":95,"courses_title":"spc tpcs macroec"},{"courses_avg":95,"courses_title":"spc tpcs macroec"},{"courses_avg":95,"courses_title":"ict educ ethics"},{"courses_avg":95,"courses_title":"ict educ ethics"},{"courses_avg":95,"courses_title":"coll&uni teachng"},{"courses_avg":95,"courses_title":"mult des anal rs"},{"courses_avg":95,"courses_title":"mult des anal rs"},{"courses_avg":95,"courses_title":"master eng proj"},{"courses_avg":95,"courses_title":"spec tpcs kin"},{"courses_avg":95,"courses_title":"spec tpcs kin"},{"courses_avg":95,"courses_title":"algb geometry i"},{"courses_avg":95,"courses_title":"algb geometry i"},{"courses_avg":95,"courses_title":"hydrmtllgcl rctr"},{"courses_avg":95,"courses_title":"hydrmtllgcl rctr"},{"courses_avg":95,"courses_title":"masters thesis"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"ubc singers"},{"courses_avg":95,"courses_title":"mntl hlth concrn"},{"courses_avg":95,"courses_title":"mntl hlth concrn"},{"courses_avg":95,"courses_title":"msc thesis"},{"courses_avg":95,"courses_title":"health psych"},{"courses_avg":95,"courses_title":"health psych"},{"courses_avg":95,"courses_title":"eval src evidenc"},{"courses_avg":95,"courses_title":"directed study"}]}

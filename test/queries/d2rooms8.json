@@ -1,0 +1,24 @@
+{
+"title": "d2 rooms query valid: sort with large data",
+"query": {
+  "WHERE": {
+    "GT": {"rooms_seats": 100}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_lat",
+      "rooms_seats"
+    ],
+    "ORDER": {
+      "dir": "DOWN",
+      "keys": [
+        "rooms_seats",
+        "rooms_lat"
+      ]
+    }
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_lat":49.26478,"rooms_seats":503},{"rooms_lat":49.26047,"rooms_seats":442},{"rooms_lat":49.26207,"rooms_seats":426},{"rooms_lat":49.2661,"rooms_seats":375},{"rooms_lat":49.26274,"rooms_seats":350},{"rooms_lat":49.26236,"rooms_seats":350},{"rooms_lat":49.26236,"rooms_seats":350},{"rooms_lat":49.26517,"rooms_seats":325},{"rooms_lat":49.2683,"rooms_seats":299},{"rooms_lat":49.2683,"rooms_seats":299},{"rooms_lat":49.2683,"rooms_seats":299},{"rooms_lat":49.26398,"rooms_seats":280},{"rooms_lat":49.26826,"rooms_seats":275},{"rooms_lat":49.2659,"rooms_seats":265},{"rooms_lat":49.26486,"rooms_seats":260},{"rooms_lat":49.26627,"rooms_seats":257},{"rooms_lat":49.26044,"rooms_seats":250},{"rooms_lat":49.2659,"rooms_seats":240},{"rooms_lat":49.26229,"rooms_seats":236},{"rooms_lat":49.26479,"rooms_seats":228},{"rooms_lat":49.26605,"rooms_seats":225},{"rooms_lat":49.266463,"rooms_seats":224},{"rooms_lat":49.26545,"rooms_seats":205},{"rooms_lat":49.26228,"rooms_seats":200},{"rooms_lat":49.26114,"rooms_seats":200},{"rooms_lat":49.26293,"rooms_seats":190},{"rooms_lat":49.26293,"rooms_seats":190},{"rooms_lat":49.26293,"rooms_seats":188},{"rooms_lat":49.26293,"rooms_seats":187},{"rooms_lat":49.26545,"rooms_seats":183},{"rooms_lat":49.26826,"rooms_seats":181},{"rooms_lat":49.26478,"rooms_seats":181},{"rooms_lat":49.26229,"rooms_seats":167},{"rooms_lat":49.26541,"rooms_seats":160},{"rooms_lat":49.26125,"rooms_seats":160},{"rooms_lat":49.26627,"rooms_seats":155},{"rooms_lat":49.26766,"rooms_seats":154},{"rooms_lat":49.26826,"rooms_seats":150},{"rooms_lat":49.26826,"rooms_seats":150},{"rooms_lat":49.26627,"rooms_seats":150},{"rooms_lat":49.26274,"rooms_seats":150},{"rooms_lat":49.26372,"rooms_seats":144},{"rooms_lat":49.26176,"rooms_seats":136},{"rooms_lat":49.26826,"rooms_seats":131},{"rooms_lat":49.26236,"rooms_seats":125},{"rooms_lat":49.26176,"rooms_seats":123},{"rooms_lat":49.26478,"rooms_seats":120},{"rooms_lat":49.26478,"rooms_seats":120},{"rooms_lat":49.26478,"rooms_seats":120},{"rooms_lat":49.26125,"rooms_seats":120},{"rooms_lat":49.2659,"rooms_seats":114},{"rooms_lat":49.2659,"rooms_seats":114},{"rooms_lat":49.26766,"rooms_seats":112},{"rooms_lat":49.26826,"rooms_seats":108},{"rooms_lat":49.26826,"rooms_seats":108},{"rooms_lat":49.266089,"rooms_seats":106},{"rooms_lat":49.26517,"rooms_seats":102}]}

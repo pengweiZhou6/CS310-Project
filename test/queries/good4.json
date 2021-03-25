@@ -1,0 +1,103 @@
+{
+    "title": "test4",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "carr, geoffrey"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "arth",
+            "courses_avg": 72.09
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.05
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 66.38
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 70.29
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.33
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 75.03
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.8
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 74.71
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 74.37
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 74.18
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.97
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 72.51
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.43
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 74.76
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 73.57
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 75.67
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 79.73
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 77.32
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 79.44
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 74.47
+        },
+        {
+            "courses_dept": "arth",
+            "courses_avg": 77.76
+        }
+    ]
+}

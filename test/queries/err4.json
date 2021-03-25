@@ -1,0 +1,31 @@
+{
+    "title": "ERR INVALID KEY TYPE IN 'IS'",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_audit": 1
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_year": 2011
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_audit",
+                "courses_title"
+            ],
+            "ORDER": {
+				"dir": "DOWN",
+				"keys": ["courses_title"]}
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}
+

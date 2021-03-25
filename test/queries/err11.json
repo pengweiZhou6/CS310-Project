@@ -1,0 +1,24 @@
+{
+"title":"ERROR AND should only have 1 key has 0",
+"query":{
+  "WHERE": {
+    "AND": [
+      {},
+      {
+        "IS": {
+          "courses_dept": "*st"
+        }
+      }
+    ]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg"
+    ],
+    "ORDER": {"dir":"DOWN",
+			"keys":["courses_avg"]}
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

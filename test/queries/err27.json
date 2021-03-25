@@ -1,0 +1,14 @@
+{
+"title": "missing OPTIONS",
+"query":{
+  "WHERE": {
+    "AND": [
+
+      {"EQ": {"courses_year": 2007}
+    },
+		{"IS":{"courses_dept": "astr"}}
+]
+  }
+},
+"isQueryValid":false,
+"result": "InsightError"}

@@ -1,0 +1,39 @@
+{
+"title": "multiple different OPTIONS",
+"query":{
+    "WHERE": {
+        "AND": [
+            {
+                "GT": {
+                    "courses_avg": 93
+                }
+            },
+            {
+                "IS": {
+                    "courses_dept": "stat"
+                }
+            }
+        ]
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_avg",
+            "courses_dept"
+        ],
+        "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_avg"]}
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_pass",
+            "courses_fail"
+        ],
+        "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_pass"]}
+    }
+},
+"isQueryValid":true,
+
+"result":[{"courses_pass":10,"courses_fail":0},{"courses_pass":10,"courses_fail":0}]}

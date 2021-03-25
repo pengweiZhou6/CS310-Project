@@ -1,0 +1,23 @@
+{
+"title":" EQ year floating point ",
+"query":{
+  "WHERE": {
+    "AND": [
+    
+      {"EQ": {"courses_year": 2007.000000000000002}
+    },
+		{"IS":{"courses_dept": "astr"}}
+]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_year"
+    ],
+    "ORDER": {"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid":true,
+
+"result":[{"courses_avg":84.13,"courses_year":2007},{"courses_avg":78.61,"courses_year":2007},{"courses_avg":77.95,"courses_year":2007},{"courses_avg":77.25,"courses_year":2007},{"courses_avg":76.09,"courses_year":2007},{"courses_avg":75.51,"courses_year":2007},{"courses_avg":73.13,"courses_year":2007},{"courses_avg":66.15,"courses_year":2007},{"courses_avg":64.27,"courses_year":2007}]}

@@ -1,0 +1,22 @@
+{
+"title": "mcomparator receives non-number",
+"query": {
+  "WHERE": {"AND":[
+      {"IS": {"courses_title": ""}},
+    
+      {"GT": {"courses_avg": "string"}}
+					]}
+  ,
+    
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_title"
+    ],
+    "ORDER": {
+	"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"}

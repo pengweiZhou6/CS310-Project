@@ -1,0 +1,23 @@
+{
+"title": "EQ course_year non-integer",
+"query":{
+  "WHERE": {
+    "AND": [
+    
+      {"EQ": {"courses_year": 2007.1}
+    },
+		{"IS":{"courses_dept": "astr"}}
+]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_year"
+    ],
+    "ORDER": {"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid":true,
+ 
+"result":[]}

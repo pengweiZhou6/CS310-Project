@@ -1,0 +1,23 @@
+{
+"title": "referenced dataset cannot be empty string",
+"query":{
+  "WHERE": {"AND":[
+      {"IS": {"courses_title": ""}},
+    
+      {"GT": {"courses_avg": 80}}
+					]}
+  ,
+    
+  "OPTIONS": {
+    "COLUMNS": [
+      "_avg",
+      "courses_title"
+    ],
+    "ORDER": {
+	"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

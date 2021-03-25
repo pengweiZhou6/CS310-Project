@@ -1,0 +1,27 @@
+{
+"title": "d2 rooms query valid: sort by applykey",
+"query": {
+  "WHERE": {
+    "GT": {"rooms_seats": 100}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_lat",
+      "avgSeats"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": [
+        "avgSeats"
+      ]
+    }
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": ["rooms_lat"],
+    "APPLY": [{"avgSeats": {"AVG": "rooms_seats"}}]
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_lat":49.266089,"avgSeats":106},{"rooms_lat":49.26176,"avgSeats":129.5},{"rooms_lat":49.26766,"avgSeats":133},{"rooms_lat":49.26125,"avgSeats":140},{"rooms_lat":49.26372,"avgSeats":144},{"rooms_lat":49.26826,"avgSeats":157.57},{"rooms_lat":49.26541,"avgSeats":160},{"rooms_lat":49.2659,"avgSeats":183.25},{"rooms_lat":49.26627,"avgSeats":187.33},{"rooms_lat":49.26293,"avgSeats":188.75},{"rooms_lat":49.26545,"avgSeats":194},{"rooms_lat":49.26114,"avgSeats":200},{"rooms_lat":49.26228,"avgSeats":200},{"rooms_lat":49.26229,"avgSeats":201.5},{"rooms_lat":49.26478,"avgSeats":208.8},{"rooms_lat":49.26517,"avgSeats":213.5},{"rooms_lat":49.266463,"avgSeats":224},{"rooms_lat":49.26605,"avgSeats":225},{"rooms_lat":49.26479,"avgSeats":228},{"rooms_lat":49.26044,"avgSeats":250},{"rooms_lat":49.26274,"avgSeats":250},{"rooms_lat":49.26486,"avgSeats":260},{"rooms_lat":49.26236,"avgSeats":275},{"rooms_lat":49.26398,"avgSeats":280},{"rooms_lat":49.2683,"avgSeats":299},{"rooms_lat":49.2661,"avgSeats":375},{"rooms_lat":49.26207,"avgSeats":426},{"rooms_lat":49.26047,"avgSeats":442}]}

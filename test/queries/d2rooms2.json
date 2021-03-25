@@ -1,0 +1,26 @@
+{
+"title": "d2 rooms query valid: rooms_IS_fullname_asterisks",
+"query": {
+  "WHERE": {
+    "IS": {
+      "rooms_fullname": "*x*"
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_lat",
+     	"rooms_seats"
+    ],
+    "ORDER": {
+      "dir": "DOWN",
+      "keys": [
+        "rooms_seats",
+        "rooms_lat"
+      ]
+    }
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_lat":49.266089,"rooms_seats":106},{"rooms_lat":49.26862,"rooms_seats":70},{"rooms_lat":49.26862,"rooms_seats":24},{"rooms_lat":49.2666,"rooms_seats":21},{"rooms_lat":49.2666,"rooms_seats":20}]}

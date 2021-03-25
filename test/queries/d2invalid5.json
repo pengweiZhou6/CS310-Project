@@ -1,0 +1,26 @@
+{
+"title": "d2 query invalid APPLY NOT ARRAY",
+"query": {
+  "WHERE": {
+    "GT": {
+      "courses_avg": 97
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "countAvg"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_dept"
+    ],
+    "APPLY": {
+      "courses_avg": 97
+    }
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

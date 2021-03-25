@@ -1,0 +1,26 @@
+{
+"title": "multiple different COLUMNS",
+"query": {
+  "WHERE": {
+      "GT": {"courses_avg":98}
+
+  },
+
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_title"
+    ],
+    "COLUMNS": [
+      "courses_instructor",
+      "courses_pass"
+    ],
+    "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_pass"]}
+  }
+},
+
+"isQueryValid":true,
+
+"result":[{"courses_instructor":"","courses_pass":82},{"courses_instructor":"frank, erica","courses_pass":82},{"courses_instructor":"grow, laura","courses_pass":25},{"courses_instructor":"grow, laura","courses_pass":24},{"courses_instructor":"","courses_pass":24},{"courses_instructor":"","courses_pass":22},{"courses_instructor":"grow, laura","courses_pass":17},{"courses_instructor":"","courses_pass":17},{"courses_instructor":"cox, daniel","courses_pass":16},{"courses_instructor":"","courses_pass":16},{"courses_instructor":"burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth","courses_pass":16},{"courses_instructor":"","courses_pass":14},{"courses_instructor":"brew, nancy","courses_pass":14},{"courses_instructor":"","courses_pass":14},{"courses_instructor":"krist, jennifer","courses_pass":14},{"courses_instructor":"","courses_pass":12},{"courses_instructor":"","courses_pass":12},{"courses_instructor":"coria, lino","courses_pass":12},{"courses_instructor":"","courses_pass":12},{"courses_instructor":"cole, kenneth","courses_pass":12},{"courses_instructor":"cannon, joanna","courses_pass":11},{"courses_instructor":"","courses_pass":11},{"courses_instructor":"cole, kenneth","courses_pass":10},{"courses_instructor":"","courses_pass":9},{"courses_instructor":"gomez, jose","courses_pass":9}]}

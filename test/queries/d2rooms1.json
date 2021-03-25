@@ -1,0 +1,26 @@
+{
+"title": "d2 rooms query valid: gt_seats_300",
+"query": {
+  "WHERE": {
+    "GT": {
+      "rooms_seats": 300
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_lat",
+     	"rooms_seats"
+    ],
+    "ORDER": {
+      "dir": "DOWN",
+      "keys": [
+        "rooms_seats",
+        "rooms_lat"
+      ]
+    }
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_lat":49.26478,"rooms_seats":503},{"rooms_lat":49.26047,"rooms_seats":442},{"rooms_lat":49.26207,"rooms_seats":426},{"rooms_lat":49.2661,"rooms_seats":375},{"rooms_lat":49.26274,"rooms_seats":350},{"rooms_lat":49.26236,"rooms_seats":350},{"rooms_lat":49.26236,"rooms_seats":350},{"rooms_lat":49.26517,"rooms_seats":325}]}

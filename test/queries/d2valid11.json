@@ -1,0 +1,13 @@
+{
+"title": "d2 query invalid COURSES RESULTTOOLARGE",
+"query": {
+  "WHERE": {},
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_title"
+    ]
+  }
+},
+"isQueryValid": false,
+"result": "ResultTooLargeError"
+}

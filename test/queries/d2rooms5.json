@@ -1,0 +1,31 @@
+{
+"title": "d2 rooms query valid: rooms GROUP and APPLY AVG",
+"query": {
+  "WHERE": {
+    "IS": {
+      "rooms_href": "*SWNG*"
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_furniture",
+     	"avgSeats"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": [
+        "rooms_furniture",
+        "avgSeats"
+      ]
+    }
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": ["rooms_furniture"],
+    "APPLY": [{"avgSeats": {"AVG": "rooms_seats"}}]
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_furniture":"Classroom-Fixed Tables/Movable Chairs","avgSeats":188.75},{"rooms_furniture":"Classroom-Movable Tables & Chairs","avgSeats":38.25},{"rooms_furniture":"Classroom-Moveable Tables & Chairs","avgSeats":27}]}
+

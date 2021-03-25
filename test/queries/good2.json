@@ -1,0 +1,37 @@
+{
+    "title": "test2",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "NOT": {
+                        "EQ": {
+                            "courses_year": 2015
+                        }
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_uuid": "27204"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_year",
+                "courses_title"
+            ],
+            "ORDER":{
+	"dir": "DOWN",
+	"keys": ["courses_year"]}
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_year": 2012,
+            "courses_title": "df calc ap ph sc"
+        }
+    ]
+}

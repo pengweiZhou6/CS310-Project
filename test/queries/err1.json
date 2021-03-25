@@ -1,0 +1,32 @@
+{
+    "title": "MORE THAN ONE DATASET",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 80
+                    }
+                },
+                {
+                    "IS": {
+                        "java_dept": "phys"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": {
+			"dir":"DOWN",
+			"keys":["courses_avg"
+		]
+		}
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

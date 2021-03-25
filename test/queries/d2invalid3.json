@@ -1,0 +1,36 @@
+{
+"title": "d2 query invalid EXTRA KEY IN TRANSFORMATIONS",
+"query": {
+  "WHERE": {
+    "GT": {
+      "courses_avg": 97
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "countAvg"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_dept"
+    ],
+    "APPLY": [
+      {
+        "countAvg": {
+          "COUNT": "courses_avg"
+        }
+      }
+    ],
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "countAvg"
+      ]
+    }
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

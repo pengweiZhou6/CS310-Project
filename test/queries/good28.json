@@ -1,0 +1,23 @@
+{
+"title": "IS inputstring includes non-alphanumeric",
+"query":{
+  "WHERE": {"AND":[
+      {"IS": {"courses_title": "*+*"}},
+    
+      {"GT": {"courses_avg": 75}}
+					]}
+  ,
+    
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_title"
+    ],
+    "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": true,
+
+"result":[{"courses_avg":84.86,"courses_title":"lit brit 18c+"},{"courses_avg":79.64,"courses_title":"lit brit 18c+"},{"courses_avg":79.51,"courses_title":"lit brit 18c+"},{"courses_avg":79.14,"courses_title":"lit brit 18c+"},{"courses_avg":78.36,"courses_title":"lit brit 18c+"},{"courses_avg":78.26,"courses_title":"lit brit 18c+"},{"courses_avg":78.12,"courses_title":"lit brit 18c+"},{"courses_avg":78.09,"courses_title":"lit brit 18c+"},{"courses_avg":77.65,"courses_title":"lit brit 18c+"},{"courses_avg":77.63,"courses_title":"lit brit 18c+"},{"courses_avg":77.6,"courses_title":"us for pol 1945+"},{"courses_avg":77.6,"courses_title":"us for pol 1945+"},{"courses_avg":77.48,"courses_title":"lit brit 18c+"},{"courses_avg":77.07,"courses_title":"lit brit 18c+"},{"courses_avg":77,"courses_title":"lit brit 18c+"},{"courses_avg":76.95,"courses_title":"lit brit 18c+"},{"courses_avg":76.95,"courses_title":"lit brit 18c+"},{"courses_avg":76.9,"courses_title":"lit brit 18c+"},{"courses_avg":76.81,"courses_title":"lit brit 18c+"},{"courses_avg":76.67,"courses_title":"us for rel 1945+"},{"courses_avg":76.67,"courses_title":"us for rel 1945+"},{"courses_avg":76.59,"courses_title":"lit brit 18c+"},{"courses_avg":76.59,"courses_title":"lit brit 18c+"},{"courses_avg":76.56,"courses_title":"lit brit 18c+"},{"courses_avg":76.08,"courses_title":"lit brit 18c+"},{"courses_avg":75.79,"courses_title":"lit brit 18c+"},{"courses_avg":75.72,"courses_title":"lit brit 18c+"},{"courses_avg":75.61,"courses_title":"lit brit 18c+"},{"courses_avg":75.48,"courses_title":"lit brit 18c+"},{"courses_avg":75.38,"courses_title":"lit brit 18c+"},{"courses_avg":75.37,"courses_title":"us for pol 1945+"},{"courses_avg":75.37,"courses_title":"us for pol 1945+"},{"courses_avg":75.32,"courses_title":"lit brit 18c+"},{"courses_avg":75.31,"courses_title":"lit brit 18c+"},{"courses_avg":75.31,"courses_title":"lit brit 18c+"}]}

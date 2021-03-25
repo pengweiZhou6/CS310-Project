@@ -1,0 +1,7 @@
+{
+	"title": "query with double Transform",
+	"query": {"WHERE":{"AND":[{"GT":{"courses_audit":8}}]},"OPTIONS":{"COLUMNS":["courses_year","deptCount","instCount"],"ORDER":{"dir":"UP","keys":["courses_year"]}},"TRANSFORMATIONS":{"GROUP":["courses_instructor","courses_year"],"APPLY":[{"deptCount":{"COUNT":"courses_dept"}},{"instCount":{"COUNT":"courses_instructor"}}]}},
+	
+	"isQueryValid": true,
+	
+	"result":[{"courses_year":1900,"deptCount":10,"instCount":1},{"courses_year":2007,"deptCount":1,"instCount":1},{"courses_year":2007,"deptCount":1,"instCount":1},{"courses_year":2007,"deptCount":1,"instCount":1},{"courses_year":2008,"deptCount":2,"instCount":1},{"courses_year":2010,"deptCount":1,"instCount":1},{"courses_year":2011,"deptCount":1,"instCount":1},{"courses_year":2013,"deptCount":1,"instCount":1},{"courses_year":2014,"deptCount":1,"instCount":1},{"courses_year":2015,"deptCount":1,"instCount":1},{"courses_year":2015,"deptCount":1,"instCount":1},{"courses_year":2015,"deptCount":1,"instCount":1},{"courses_year":2015,"deptCount":1,"instCount":1}]}

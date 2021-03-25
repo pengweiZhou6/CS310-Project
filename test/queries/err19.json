@@ -1,0 +1,21 @@
+{
+"title": "ORDER before COLUMNS",
+"query": {
+    "WHERE": {
+        "EQ": {
+            "courses_avg": 95
+        }
+    },
+    "OPTIONS": {
+        "ORDER": {
+	"dir": "DOWN",
+	"keys": ["courses_avg"]},
+        "COLUMNS": [
+            "courses_avg"
+        ]
+    }
+},
+"isQueryValid":true,
+
+"result":[{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95},{"courses_avg":95}]}
+

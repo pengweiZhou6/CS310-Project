@@ -1,0 +1,38 @@
+{
+"title": "nested AND",
+"query":{
+    "WHERE": {
+        "AND": [
+            {
+                "AND": [
+                    {
+                        "LT": {
+                            "courses_avg": 78
+                        }
+                    },
+                    {
+                        "GT": {
+                            "courses_avg": 77
+                        }
+                    }
+                ]
+            },
+            {
+                "IS": {
+                    "courses_dept": "astr"
+                }
+            }
+        ]
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "courses_avg"
+        ],
+        "ORDER": {
+	"dir": "DOWN",
+	"keys": ["courses_avg"]}
+    }
+},
+"isQueryValid": true,
+
+"result":[{"courses_avg":77.95},{"courses_avg":77.77},{"courses_avg":77.77},{"courses_avg":77.75},{"courses_avg":77.75},{"courses_avg":77.71},{"courses_avg":77.71},{"courses_avg":77.63},{"courses_avg":77.63},{"courses_avg":77.56},{"courses_avg":77.56},{"courses_avg":77.26},{"courses_avg":77.26},{"courses_avg":77.25},{"courses_avg":77.25},{"courses_avg":77.16},{"courses_avg":77.14},{"courses_avg":77.14},{"courses_avg":77.13}]}

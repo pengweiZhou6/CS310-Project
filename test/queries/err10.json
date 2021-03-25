@@ -1,0 +1,16 @@
+{
+"title":"expect error: cannot read property GROUP of undefined",
+"query":{
+  "WHERE": {
+    
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      ""
+    ],
+    "ORDER": ""
+  }
+},
+"isQueryValid":false,
+"result": "InsightError"
+}

@@ -1,0 +1,41 @@
+{
+	"title": "EXPECT: error, keys in COLUMNS must be in GROUP or APPLY",
+	"query": {
+  "WHERE": {
+    "AND": [
+      {
+        "GT": {
+          "courses_avg": 90
+        }
+      }
+    ]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "courses_instructor",
+      "avgAvg"
+    ],
+    "ORDER": {
+      "dir": "DOWN",
+      "keys": [
+        "avgAvg"
+      ]
+    }
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_dept"
+    ],
+    "APPLY": [
+      {
+        "avgAvg": {
+          "AVG": "courses_avg"
+        }
+      }
+    ]
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

@@ -1,0 +1,24 @@
+{
+"title": "AND with single FILTER",
+"query":{
+  "WHERE": {
+    "AND": [
+      {
+        "GT": {
+          "courses_avg": 98
+        }
+      }
+    ]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg",
+      "courses_title"
+    ],
+    "ORDER": {"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": true,
+
+"result":[{"courses_avg":99.78,"courses_title":"algb topology i"},{"courses_avg":99.78,"courses_title":"algb topology i"},{"courses_avg":99.19,"courses_title":"career planning"},{"courses_avg":98.98,"courses_title":"work int health"},{"courses_avg":98.98,"courses_title":"work int health"},{"courses_avg":98.8,"courses_title":"educ stds autism"},{"courses_avg":98.76,"courses_title":"educ stds autism"},{"courses_avg":98.76,"courses_title":"educ stds autism"},{"courses_avg":98.75,"courses_title":"multimedia sys"},{"courses_avg":98.75,"courses_title":"multimedia sys"},{"courses_avg":98.71,"courses_title":"cl pro prim care"},{"courses_avg":98.71,"courses_title":"cl pro prim care"},{"courses_avg":98.7,"courses_title":"assess lrn diffi"},{"courses_avg":98.58,"courses_title":"educ stds autism"},{"courses_avg":98.58,"courses_title":"educ stds autism"},{"courses_avg":98.58,"courses_title":"fam nrs pract"},{"courses_avg":98.58,"courses_title":"fam nrs pract"},{"courses_avg":98.5,"courses_title":"fam nrs pract"},{"courses_avg":98.5,"courses_title":"fam nrs pract"},{"courses_avg":98.45,"courses_title":"dev el sk df&hrd"},{"courses_avg":98.45,"courses_title":"dev el sk df&hrd"},{"courses_avg":98.36,"courses_title":"assess lrn diffi"},{"courses_avg":98.21,"courses_title":"cl pro prim care"},{"courses_avg":98.21,"courses_title":"cl pro prim care"},{"courses_avg":98.08,"courses_title":"assess lrn diffi"}]}

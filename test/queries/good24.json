@@ -1,0 +1,20 @@
+{
+    "title": "EQ number zero",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_avg": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_title"
+            ],
+            "ORDER": {
+		"dir": "DOWN",
+		"keys": ["courses_avg"]}
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_avg":0,"courses_title":"forest ecology"},{"courses_avg":0,"courses_title":"in land food com"},{"courses_avg":0,"courses_title":"in land food com"}]}

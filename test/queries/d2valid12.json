@@ -1,0 +1,19 @@
+{
+"title": "d2 query invalid BAD SORT DIR",
+"query": {
+  "WHERE": {
+    "GT": {"courses_avg": 99}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_title"
+    ],
+    "ORDER": {
+      "dir": "BAD",
+      "keys": ["courses_title"]
+    }
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

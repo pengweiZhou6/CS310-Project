@@ -1,0 +1,26 @@
+{
+"title": "d2 rooms query valid: IS_href_order_address_fullname",
+"query": {
+  "WHERE": {
+    "IS": {
+      "rooms_href": "*SWNG*"
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "rooms_fullname",
+     	"rooms_address"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": [
+        "rooms_address",
+        "rooms_fullname"
+      ]
+    }
+  }
+}
+,
+"isQueryValid": true,
+
+"result":[{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"},{"rooms_fullname":"West Mall Swing Space","rooms_address":"2175 West Mall V6T 1Z4"}]}

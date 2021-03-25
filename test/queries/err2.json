@@ -1,0 +1,16 @@
+{
+    "title": "NOT ADDED DATASET",
+    "query": {
+        "WHERE": {
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "foobar_dept"
+            ],
+            "ORDER": { "dir":"DOWN",
+			"keys":["courses_avg"]}
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

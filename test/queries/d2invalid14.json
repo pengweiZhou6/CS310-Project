@@ -1,0 +1,25 @@
+{
+"title": "d2 query invalid APPLY BODY NOT OBJECT",
+"query": {
+  "WHERE": {
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "countAvg"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "GROUP": [
+      "courses_dept"
+    ],
+    "APPLY": [
+      {
+        "countAvg": []
+      }
+    ]
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

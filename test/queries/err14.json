@@ -1,0 +1,24 @@
+{
+"title":"ERROR OR should only have 1 key has 0, case 2",
+"query":{
+  "WHERE": {
+    "OR": [
+      {
+        "GT": {"courses_avg": 93}
+      },
+      {
+      }
+    ]
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_avg"
+    ],
+    "ORDER": {
+	"dir": "DOWN",
+	"keys": ["courses_avg"]}
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}

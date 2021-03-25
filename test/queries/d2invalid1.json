@@ -1,0 +1,28 @@
+{
+"title": "d2 query invalid no GROUP",
+"query": {
+  "WHERE": {
+    "GT": {
+      "courses_avg": 97
+    }
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_dept",
+      "countAvg"
+    ]
+  },
+  "TRANSFORMATIONS": {
+    "APPLY": [
+      {
+        "countAvg": {
+          "COUNT": "courses_avg"
+        }
+      }
+    ]
+  }
+},
+"isQueryValid": false,
+
+"result": "InsightError"
+}

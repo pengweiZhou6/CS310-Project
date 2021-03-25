@@ -1,0 +1,16 @@
+{
+"title": "OPTIONS missing COLUMNS",
+"query":{
+  "WHERE": {
+    "AND": [
+    
+      {"EQ": {"courses_year": 2007}
+    },
+		{"IS":{"courses_dept": "astr"}}
+]
+  },
+  "OPTIONS": {
+  }
+},
+"isQueryValid":false,
+"result": "InsightError"}

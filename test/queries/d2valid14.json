@@ -1,0 +1,20 @@
+{
+"title": "d2 query invalid REFERENCES MULTIPLE DATASETS",
+"query": {
+  "WHERE": {
+    "GT": {"courses_avg": 99}
+  },
+  "OPTIONS": {
+    "COLUMNS": [
+      "courses_title",
+      "rooms_title"
+    ],
+    "ORDER": {
+      "dir": "UP",
+      "keys": ["courses_title"]
+    }
+  }
+},
+"isQueryValid": false,
+"result": "InsightError"
+}
